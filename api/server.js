@@ -6,7 +6,7 @@ const userMOdel = require("./users/model");
 server.use(express.json());
 
 
-//----------POST
+//----------POST ADD
 server.post("/api/users", async (req, res) => {
     try {
         let { name, bio } = req.body;
@@ -65,7 +65,7 @@ server.delete ("/api/users/:id", async (req,res) => {
     }
 });
 
-//-----------PUT
+//-----------PUT Update
 
 server.put("/api/user/:id", async (req, res) => {
     try {
